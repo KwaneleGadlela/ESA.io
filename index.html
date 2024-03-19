@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Record keeper</title>
+        <link rel="stylesheet" href="resources/css/style.css">
+    </head>
+    <body>
+        <header class="header">
+            <div class="header-cont">
+                <div class="header-logo">
+                    <img src="" alt="">
+                </div>
+            </div>
+        </header>
+        <section>
+            <div class="form-section">
+                <h2>Login</h2>
+                <form name="f1" class="login-form" action="user_login.php" method="POST" onsubmit="return validation()">
+                    <div>    
+                        <select class="select-opt" name="option_to_login" id="option_to_login">
+                            <option value="admin">Admin</option>
+                            <option value="employee">Employee</option>
+                        </select>
+                    </div>
+                    <br>
+                    <label class="form-label" for="email_addr">Email:</label><br>
+                    <input class="form-attr" id="email_addr" name="email_addr" type="email">
+                    <br>
+                    <label class="form-label" for="password_field">Password:</label><br>
+                    <input class="form-attr" id="password_field" name="password_field" type="password">
+                    <br>
+                    <input class="form-attr btn" type="submit" placqeholder="submit" name="submit">
+                </form>
+            </div>
+        </section>
+        <footer class="index-footer">
+            
+        </footer>
+        <!--Validation for empty field-->
+        <script src="resources/Javascript/validation2.js"></script>
+    </body>
+</html>

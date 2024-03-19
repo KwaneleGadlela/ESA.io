@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Record keeper</title>
+        <link rel="stylesheet" href="resources/css/style.css">
+    </head>
+    <body>
+        <header class="reg-header">
+            <div class="dashlink"><a href="dashboard.html">Dashboard</a></div>
+        </header>
+        <section>
+
+            
+            <div class="form-section">
+                <h2 class="head2">Register / <a class="headerlink" href="index.html">Login</a></h2>
+                <form name="reg_form" class="login-form" action="user_reg.php" method="POST" onsubmit="return validation()">
+                    <label class="form-label" for="email_addr">Email:</label><br>
+                    <input class="form-attr" id="email_addr" name="email_addr" type="email">
+                    <br>
+                    <label class="form-label" for="first_name">First Name:</label><br>
+                    <input class="form-attr" id="first_name" name="first_name" type="text">
+                    <br>
+                    <label class="form-label" for="last_name">Last Name:</label><br>
+                    <input class="form-attr" id="last_name" name="last_name" type="text">
+                    <br>
+                    <div class="form-attr" >    
+                        <select class="select-opt" name="option_to_login" id="option_to_login">
+                            <option value="admin">Admin</option>
+                            <option value="employee">Employee</option>
+                        </select>
+                    </div>
+                    <br>
+                    <label class="form-label" for="password_field">Password:</label><br>
+                    <input class="form-attr" id="password_field" name="password_field" type="password">
+                    <br>
+                    <label class="form-label" for="confirm_password_field">Confirm Password:</label><br>
+                    <input class="form-attr" id="confirm_password_field" name="confirm_password_field" type="password">
+                    <br>
+                    <input class="form-attr btn" type="submit" Value="Register" name="register">
+                </form>
+            </div>
+        </section>
+        <footer class="reg-footer">
+            
+        </footer>
+
+        <!--Validation for empty field-->
+        <script src="resources/Javascript/validation.js"></script>
+    </body>
+</html>
